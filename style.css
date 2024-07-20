@@ -341,6 +341,78 @@ p {
 }
 /* End Services Section */
 
+#catalog .catalog {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#catalog .catalog-header h1{
+	margin-bottom: 50px;
+}
+
+#catalog .all-catalog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#catalog .catalog-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#catalog .catalog-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#catalog .catalog-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#catalog .catalog-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#catalog .catalog-info p {
+	color: white;
+}
+#catalog .catalog-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#catalog .catalog-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
+#catalog .catalog-img img {
+	transition: 0.3s ease transform;
+}
+#catalog .catalog-item:hover .catalog-img img {
+	transform: scale(1.1);
+}
+
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
@@ -506,6 +578,52 @@ p {
 	font-weight: 500;
 }
 /*End contact Section */
+
+/* catalog Section */
+#catalog .catalog {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+	background-image: url('https://wallpapers.com/images/hd/grey-texture-background-cupxi624ho40xpjn.jpg');
+}
+#catalog .catalog-items {
+	/* max-width: 400px; */
+	width: 100%;
+}
+#catalog .catalog-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#catalog .catalog-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#catalog .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#catalog .catalog-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#catalog .catalog-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End catalog Section */
 
 /* Footer */
 #footer {
@@ -715,4 +833,72 @@ p {
 		margin: 1.5%;
 	}
 }
+
+.product {
+	width: 400px;
+	padding: 8%;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .product img {
+	width: 100%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+  }
+  
+  .product-content {
+	padding: 16px 32px;
+  }
+  
+  .product-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #1f2937;
+  }
+  
+  .product-subtitle {
+	font-size: 1rem;
+	color: #6b7280;
+  }
+  
+  .product-details {
+	padding: 16px 32px;
+  }
+  
+  .product-details div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+  }
+  
+  .product-details img {
+	margin-right: 12px;
+  }
+  
+  .product-footer {
+	padding: 8px 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .product-footer s {
+	font-size: 1rem;
+	color: #6b7280;
+  }
+  
+  .product-footer p {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #1f2937;
+  }
+
+  .logo {
+	width: 10%;
+      }
+  
 /* End  Media Query For Desktop */
